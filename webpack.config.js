@@ -4,7 +4,6 @@ module.exports = {
     entry: {
         main: "./src/js/main.js",
         vendor: "./src/js/vendor.js",
-        youtube: "./src/js/utils/youtubeSplide.js",
     },
     module: {
         rules: [
