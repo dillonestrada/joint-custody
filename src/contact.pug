@@ -1,0 +1,34 @@
+extends layouts/main.pug
+block current
+    - var current = 'Contact'
+block head
+    title Joint Custody - Contact
+block content
+    .container-lg
+        section#contact
+            h1.section-header Contact Us
+            .contact-details
+                div 
+                    h3 Tyler Dudley
+                    span.contact-info 
+                        i.fas.fa-phone
+                        | (903) 258-7401
+                    span.contact-info 
+                        i.fas.fa-envelope
+                        | tyler_dudley95@yahoo.com
+                div
+                    h3 Management
+                    span.contact-info 
+                        strong Aaron Uribe
+                    span.contact-info 
+                        i.fas.fa-phone
+                        | (903) 944-9334
+                    span.contact-info 
+                        i.fas.fa-envelope
+                        | aaroneuribe12@gmail.com
+                div 
+                    h3 Booking
+                    span.contact-info 
+                        i.fas.fa-envelope
+                        | jointcustodybooking@gmail.com
+            include ./components/contact-form.pug

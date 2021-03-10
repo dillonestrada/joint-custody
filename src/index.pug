@@ -1,0 +1,16 @@
+extends layouts/main.pug
+block current
+    - var current = 'Home'
+block head
+    title Joint Custody - Home
+block content
+    .container-xxl
+        section#home
+            .jumbotron
+                .img-container
+                    .overlay
+                        img(src=require("./img/logo.png"))
+                    img(src=require("./img/band-pic1.jpg"))
+                    img(src=require("./img/band-pic2.jpg"))
+            #bandsintown
+                include ./utils/bandsintown.html

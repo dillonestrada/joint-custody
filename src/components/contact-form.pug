@@ -1,0 +1,11 @@
+form.my-5
+    .form-group.mb-3
+        label.mb-2(for="nameInput") Name
+        input.form-control#nameInput(type="text" required=true)
+    .form-group.mb-3
+        label.mb-2(for="emailInput") Email
+        input.form-control#emailInput(type="email" required=true)
+    .form-group.mb-3
+        label.mb-2(for="messageInput") Message
+        textarea.form-control#messageInput(rows="4" required=true)
+    button.btn.btn-light(type="submit") Send

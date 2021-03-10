@@ -1,0 +1,22 @@
+nav.navbar.navbar-expand-md
+    .container-xxl
+        a.navbar-brand(href="/")
+            //- img(src=require("../img/logo.png"))
+            span Joint Custody
+        button.navbar-toggler(
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                    )
+            span.navbar-toggler-icon
+        .collapse.navbar-collapse#navbarNavAltMarkup
+            - var items = {home: 'Home', about: 'About', media: 'Media', merch: 'Merch', contact: 'Contact'}
+            block current
+            .navbar-nav
+                each item, path in items
+                    a.nav-link(href= path != 'home' ? `/${path}` : '/', class= path == current.toLowerCase() ? 'active' : '')
+                        span=item
+                

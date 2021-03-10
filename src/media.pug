@@ -1,0 +1,15 @@
+extends layouts/main.pug
+block current
+    - var current = 'Media'
+block head
+    title Joint Custody - Media
+
+block content
+    .container-lg
+        section#media
+            #content-wrap
+                h1.section-header Media
+                .media-container
+                    .audio
+                        iframe(src="https://open.spotify.com/embed/album/2KX5cS0cOEpP9Xn0StrvR6" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media")            
+                        iframe(allow="autoplay *; encrypted-media *; fullscreen *" frameborder="0" height="380" style="width:100%;max-width:300px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/gb/album/wake-up-stoned-single/1549160601")                

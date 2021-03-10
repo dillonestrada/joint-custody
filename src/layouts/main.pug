@@ -1,0 +1,35 @@
+doctype
+html(lang='en')
+    head
+        meta(charset='utf-8')
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(
+            name="description"
+            content='Joint Custody is a young band that just released their first single, "Mississippi Moonshine," on all major streaming platforms. The band started from a group of friends that enjoyed jamming with each other.')
+
+        meta(property="og:title" content="Joint Custody")
+        meta(
+            property="og:description"
+            content='Joint Custody is a young band that just released their first single, "Mississippi Moonshine," on all major streaming platforms. The band started from a group of friends that enjoyed jamming with each other.')
+        meta(property="og:image" content="https://www.jointcustody.com/band-pic2.jpg")
+        meta(property="og:url" content="https://www.jointcustody.com")
+
+        meta(name="twitter:title" content="Joint Custody")
+        meta(name="twitter:description"
+            content='Joint Custody is a young band that just released their first single, "Mississippi Moonshine," on all major streaming platforms. The band started from a group of friends that enjoyed jamming with each other.')
+        meta(name="twitter:image" content="https://www.jointcustody.com/band-pic2.jpg")
+        meta(name="twitter:card" content="summary_large_image")
+
+        script(src="https://kit.fontawesome.com/a8f5f6bfc2.js"
+            crossorigin="anonymous")
+        link(href="https://fonts.googleapis.com/css2?family=Martel:wght@500;600;700;800&family=Montserrat:wght@400;500;600;700;800&display=swap"
+            rel="stylesheet")
+        link(rel="icon" href=require('./img/logo.png') type="img/png")
+        block head
+    body
+        #page-container
+            include ../components/navbar.pug
+            #content-wrap
+                block content
+            include ../components/footer.pug
+            block scripts
