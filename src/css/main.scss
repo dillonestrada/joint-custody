@@ -83,7 +83,7 @@ $dark: $dark;
 #about {
     .about-text {
         padding: 1rem;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
         font-weight: 500;
     }
 }
@@ -116,9 +116,13 @@ footer {
     padding: 1rem 0;
     .social-media-footer {
         font-size: 1.5rem;
+
         a {
             margin: 0 0.5rem;
             color: $white;
+            &:hover {
+                color: darken($white, 20%);
+            }
         }
         margin-bottom: 0.2rem;
     }
@@ -156,6 +160,9 @@ footer {
         label {
             color: $white;
             font-weight: 500;
+        }
+        .form-control {
+            background-color: white;
         }
     }
 }
